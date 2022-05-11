@@ -27,7 +27,7 @@ const Index = () => {
         <div className="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
           <div className="text-center lg:w-2/3 w-full mt-5">
             <h1 className="title-font sm:text-6xl text-4xl mb-4 font-medium text-gray-900">We Are Recruiting</h1>
-            <button className="text-white bg-yellow-500 border-0 py-5 mt-10 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg" onClick={()=>{router.push("/Recruitment")}}>Apply Here</button>
+            <button className="text-white bg-red-800 border-0 py-5 mt-10 px-6 focus:outline-none hover:bg-red-900 rounded text-lg" onClick={()=>{router.push("/Recruitment")}}>Apply Here</button>
             
           </div>
         </div>
@@ -40,7 +40,7 @@ const Index = () => {
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Check Out Our Posts on Facebook and Instagram
             </h1>
-            <p className='text-lg'>We post daily on Instagram about Almanac and on Facebook about any latest events going on in the college and around the world.</p>
+            <p className='text-xl'>We post daily on Instagram about Almanac and on Facebook about any latest events going on in the college and around the world.</p>
             <div className="flex justify-center">
               <a href="https://www.instagram.com/hitianinside/?hl=en"><button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Follow Now</button></a>
             </div>
@@ -52,7 +52,7 @@ const Index = () => {
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Check Out Our Content On Youtube
             </h1>
-            <p className='text-lg'>We also post on Youtube about stuff like live webinars or information about any events.</p>
+            <p className='text-xl'>We also post on Youtube about stuff like live webinars or information about any events.</p>
             <div className="flex justify-center">
               <a href='https://www.youtube.com/channel/UCbIfnsMFKnkONyT8QCPifbw'><button className="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Subscribe Now</button></a>
             </div>

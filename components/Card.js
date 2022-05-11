@@ -20,7 +20,7 @@ const CardComponent = (props) => {
             <Card.Content extra>
                 <div className='ui two buttons'>
                     <a href={props.link}>
-                    <Button basic color='green'>
+                    <Button basic color="red">
                        Apply Here
                     </Button>
                     </a>

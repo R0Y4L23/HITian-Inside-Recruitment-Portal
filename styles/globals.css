@@ -107,8 +107,11 @@ a {
       background-attachment: fixed;
     }
     .back2{
-      background: url("../assets/back2.jpg");
+      background: url("../assets/back3.jpg");
       background-size: cover;
       background-repeat: repeat;
       background-attachment: fixed;
+    }
+    .bg-mar{
+      background-color: #FCF9FA;
     }

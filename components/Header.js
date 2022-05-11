@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 const Header = () => {
     const router = useRouter();
   return (
-    <header className="text-gray-600 body-font border-b-2 border-black">
+    <header className="text-gray-600 body-font border-b-2 border-black bg-mar">
         <div className="container mx-auto flex p-5 flex-col md:flex-row items-center">
          <Image className='cursor-pointer' src={img} height={60} width={60} onClick={()=>{router.push("/")}}/>
           <nav className="md:ml-auto flex items-center text-base justify-center pt-3">
