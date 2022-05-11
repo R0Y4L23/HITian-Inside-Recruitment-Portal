@@ -13,14 +13,14 @@ const CardComponent = (props) => {
                     src={props.image}
                 />
                 <Card.Header style={{ marginTop: 20 }}>{props.position}</Card.Header>
-                <Card.Description>
+                {/* <Card.Description>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quae consequuntur voluptatem accusantium recusandae ea?
-                </Card.Description>
+                </Card.Description> */}
             </Card.Content>
             <Card.Content extra>
                 <div className='ui two buttons'>
                     <Button basic color='green'>
-                        Apply
+                        Coming Soon
                     </Button>
                 </div>
             </Card.Content>

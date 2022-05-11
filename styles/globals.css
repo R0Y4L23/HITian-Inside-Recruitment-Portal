@@ -99,3 +99,16 @@ a {
         font-size: 1.5em;
       }
     }
+
+    .back{
+      background: url("../assets/back.jpg");
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
+    .back2{
+      background: url("../assets/back2.jpg");
+      background-size: cover;
+      background-repeat: repeat;
+      background-attachment: fixed;
+    }
