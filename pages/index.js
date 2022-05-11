@@ -5,8 +5,10 @@ import img from "../assets/inside.jpg"
 import Image from 'next/image'
 import insta from '../assets/insta.png'
 import Head from 'next/head'
+import { useRouter } from 'next/dist/client/router'
 
 const Index = () => {
+  const router = useRouter();
   return (
     <>
     <Head>
@@ -16,8 +18,17 @@ const Index = () => {
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <div className="text-center lg:w-2/3 w-full mt-20">
-            <h1 className="title-font sm:text-6xl text-xl mb-4 font-medium text-gray-900">Who Are We?</h1>
+            <h1 className="title-font sm:text-6xl text-4xl mb-4 font-medium text-gray-900">Who Are We?</h1>
             <p className="mb-8 leading-relaxed text-2xl mt-3">Media Activist at Haldia Institute of Technology, providing various information related to Workshops, Events, Fests and all other things occurring inside the institute premises. Besides, the team also conducts various Events (many online competitions), Mini-Fest (like Extravaganza) and many more.</p>
+          </div>
+        </div>
+      </section>
+      <section className="text-gray-600 body-font">
+        <div className="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
+          <div className="text-center lg:w-2/3 w-full mt-5">
+            <h1 className="title-font sm:text-6xl text-4xl mb-4 font-medium text-gray-900">We Are Recruiting</h1>
+            <button className="text-white bg-yellow-500 border-0 py-5 mt-10 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg" onClick={()=>{router.push("/Recruitment")}}>Apply Here</button>
+            
           </div>
         </div>
       </section>
@@ -46,8 +57,9 @@ const Index = () => {
               <a href='https://www.youtube.com/channel/UCbIfnsMFKnkONyT8QCPifbw'><button className="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Subscribe Now</button></a>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <iframe width="400" height="315" src="https://www.youtube.com/embed/r-gPNwKxRiw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mx-auto">
+          <iframe className='sm:block hidden mx-auto' width="400" height="315" src="https://www.youtube.com/embed/r-gPNwKxRiw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe className='sm:hidden mx-auto' width="220" height="105" src="https://www.youtube.com/embed/r-gPNwKxRiw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </section>

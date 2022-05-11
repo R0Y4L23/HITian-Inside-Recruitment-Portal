@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const CardComponent = (props) => {
     return (
-        <Card>
+        <Card style={{height:550}}>
             <Card.Content>
                 <Image
                     height={100}
@@ -13,15 +13,17 @@ const CardComponent = (props) => {
                     src={props.image}
                 />
                 <Card.Header style={{ marginTop: 20 }}>{props.position}</Card.Header>
-                {/* <Card.Description>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis quae consequuntur voluptatem accusantium recusandae ea?
-                </Card.Description> */}
+                <Card.Description className="text-xl">
+                    {props.desc}
+                </Card.Description>
             </Card.Content>
             <Card.Content extra>
                 <div className='ui two buttons'>
+                    <a href={props.link}>
                     <Button basic color='green'>
-                        Coming Soon
+                       Apply Here
                     </Button>
+                    </a>
                 </div>
             </Card.Content>
         </Card>
